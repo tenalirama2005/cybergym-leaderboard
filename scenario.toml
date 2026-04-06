@@ -3,7 +3,7 @@ image = "cybergym-green:latest"
 env = {}
 
 [[participants]]
-image = "cybergym-purple:latest"
+image = "cybergym-dummy-purple:latest"
 name = "agent"
 env = {}
 
