@@ -1,7 +1,7 @@
 {
   manifest_version: "0.1.0",
   program: {
-    image: "tenalirama2026/cybergym-agentx:v3",
+    image: "tenalirama2026/cybergym-agentx:v4",
     entrypoint: ["/app/cybergym_agentx"],
     env: {
       ANTHROPIC_API_KEY: "${config.anthropic_api_key}",
