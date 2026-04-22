@@ -9,11 +9,11 @@
     env: {
       ANTHROPIC_API_KEY: "${config.anthropic_api_key}",
       NVIDIA_API_KEY: "${config.nvidia_api_key}",
-      PORT: "9010",
+      PORT: "9009",
     },
     network: {
       endpoints: [
-        { name: "a2a_endpoint", port: 9010 },
+        { name: "a2a_endpoint", port: 9009 },
       ],
     },
   },
