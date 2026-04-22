@@ -1,10 +1,11 @@
 {
   manifest_version: "0.1.0",
   program: {
-    image: "tenalirama2026/cybergym-agentx:v1",
+    image: "tenalirama2026/cybergym-agentx:v2",
     entrypoint: ["/app/cybergym_agentx"],
     env: {
       ANTHROPIC_API_KEY: "${config.anthropic_api_key}",
+      NVIDIA_API_KEY: "${config.nvidia_api_key}",
       PORT: "9010",
     },
     network: {
@@ -17,8 +18,9 @@
     type: "object",
     properties: {
       anthropic_api_key: { type: "string", secret: true },
+      nvidia_api_key: { type: "string", secret: true },
     },
-    required: ["anthropic_api_key"],
+    required: ["anthropic_api_key", "nvidia_api_key"],
     additionalProperties: false,
   },
   provides: {
