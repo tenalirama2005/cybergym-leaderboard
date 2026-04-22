@@ -1,8 +1,11 @@
 {
   manifest_version: "0.1.0",
+  slots: {
+    proxy: { kind: "a2a", optional: true },
+  },
   program: {
     image: "tenalirama2026/cybergym-agentx:v4",
-    entrypoint: ["/app/cybergym_agentx"],
+    entrypoint: "/app/cybergym_agentx",
     env: {
       ANTHROPIC_API_KEY: "${config.anthropic_api_key}",
       NVIDIA_API_KEY: "${config.nvidia_api_key}",
