@@ -8,6 +8,18 @@ name = "agent"
 env = {}
 
 [config]
-# Add your assessment config here
-task = "arvo:47101"
+tasks = [
+  "arvo:47101",
+  "arvo:24993",
+  "arvo:10400",
+  "arvo:3938",
+  "arvo:1065",
+  "arvo:368",
+  "oss-fuzz:42535201",
+  "oss-fuzz:37068942",
+  "oss-fuzz:42535468",
+  "oss-fuzz:385167047",
+]
+num_shards = 2
+num_workers = 2
 level = "level1"
