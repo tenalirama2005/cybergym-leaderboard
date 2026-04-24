@@ -4,7 +4,7 @@
     proxy: { kind: "a2a", optional: true },
   },
   program: {
-    image: "tenalirama2026/cybergym-agentx:v52",
+    image: "tenalirama2026/cybergym-agentx:v54",
     entrypoint: "/app/cybergym_agentx",
     env: {
       ANTHROPIC_API_KEY: "${config.anthropic_api_key}",
