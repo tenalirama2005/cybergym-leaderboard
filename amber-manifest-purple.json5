@@ -4,11 +4,11 @@
     proxy: { kind: "a2a", optional: true },
   },
   program: {
-    image: "tenalirama2026/cybergym-agentx:v57",
+    image: "tenalirama2026/cybergym-agentx:v58",
     entrypoint: "/app/cybergym_agentx",
     env: {
-      ANTHROPIC_API_KEY: "${config.anthropic_api_key}",
-      NVIDIA_API_KEY: "${config.nvidia_api_key}",
+      AZURE_OPENAI_KEY: "${config.openai_api_key}",
+      AZURE_OPENAI_ENDPOINT: "https://pi-bench-agentx-resource.cognitiveservices.azure.com/",
       PORT: "9009",
     },
     network: {
@@ -20,10 +20,9 @@
   config_schema: {
     type: "object",
     properties: {
-      anthropic_api_key: { type: "string", secret: true },
-      nvidia_api_key: { type: "string", secret: true },
+      openai_api_key: { type: "string", secret: true },
     },
-    required: ["anthropic_api_key", "nvidia_api_key"],
+    required: ["openai_api_key"],
     additionalProperties: false,
   },
   provides: {
