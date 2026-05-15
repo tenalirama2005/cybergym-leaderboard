@@ -4,7 +4,7 @@
     proxy: { kind: "a2a", optional: true },
   },
   program: {
-    image: "tenalirama2026/cybergym-agentx@sha256:a47cd17a8561b20701d435d7e3f0c65bca53858b70e379b5d013b4acd56c572b",
+    image: "tenalirama2026/cybergym-agentx@sha256:bc6667820a548185fbb40093fa636286cd282c099d5c51d114445a8ac832108a",
     entrypoint: "/app/cybergym_agentx",
     env: {
       AZURE_OPENAI_KEY: "${config.openai_api_key}",
