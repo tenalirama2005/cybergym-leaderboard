@@ -4,13 +4,11 @@
     proxy: { kind: "a2a", optional: true },
   },
   program: {
-    image: "tenalirama2026/cybergym-agentx@sha256:6ad0675e4e70edd5c1e1f370f879863458e988db54cd7f617e4841b84d62effc",
+    image: "tenalirama2026/cybergym-agentx@sha256:bc6667820a548185fbb40093fa636286cd282c099d5c51d114445a8ac832108a",
     entrypoint: "/app/cybergym_agentx",
     env: {
       AZURE_OPENAI_KEY: "${config.openai_api_key}",
       AZURE_OPENAI_ENDPOINT: "https://pi-bench-agentx-resource.cognitiveservices.azure.com/",
-      CYBERGYM_MODEL_PRIORITY: "gpt-5.5,gpt-5.4",
-      CYBERGYM_MIN_COMPLETION_TOKENS: "20",
       PORT: "9009",
     },
     network: {
